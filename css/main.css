@@ -1,0 +1,81 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: monospace;
+}
+
+.main-div {
+  display: grid;
+  grid-template-columns: 4fr 3fr 4fr;
+  grid-gap: 1em;
+  padding: 1em;
+  grid-auto-rows: 400px;
+  text-align: center;
+}
+
+.main-div > div {
+  padding: 1em;
+  /* background-color: lightgray; */
+}
+
+.main-col-1,
+.main-col-2,
+.main-col-3 {
+  display: grid;
+  grid-template-rows: 5fr 3fr 5fr;
+  grid-gap: 1em;
+}
+
+.main-col-1 > div,
+.main-col-2 > div,
+.main-col-3 > div {
+  background-color: white;
+}
+
+header {
+  font-size: larger;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: bold;
+  font-size: large;
+}
+
+.player-title {
+  display: grid;
+  align-content: flex-end;
+}
+
+.npc-title {
+  display: grid;
+  align-content: flex-end;
+}
+
+.player-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  justify-items: center;
+}
+
+button {
+  width: 80px;
+  height: 20px;
+}
+
+.versus,
+.npc-move,
+.player-score,
+.score-messages,
+.npc-score {
+  display: grid;
+  align-content: center;
+}
